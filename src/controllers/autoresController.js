@@ -8,7 +8,7 @@ class AutorController {
 
       res.status(200).json(autoresResultado);
     } catch (erro) {
-      res.status(500).json({ message: "Erro interno no servidor" });
+      res.status(500).json({ message: `Erro interno no servidor -> ${erro}` });
     }
   };
 
@@ -25,9 +25,9 @@ class AutorController {
       }
     } catch (erro) {
       if (erro instanceof mongoose.Error.CastError) {
-        res.status(400).send({message: "Um ou mais dados fornecidos estão incorretos."});
+        res.status(400).send({message: `Um ou mais dados fornecidos estão incorretos - > ${erro}` });
       } else {
-        res.status(500).send({message: "Erro interno de servidor."});
+        res.status(500).send({message: `Erro interno de servidor - > ${erro}`});
       }
     }
   };

@@ -1,5 +1,5 @@
 {
-  "name": "alura-node",
+  "name": "Edmir Lobo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.33.0",
+    "@eslint/js": "^9.18.0",
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0",
     "nodemon": "^2.0.15"
   },
   "dependencies": {
